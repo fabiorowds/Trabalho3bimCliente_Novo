@@ -159,6 +159,8 @@ public class TelaDisciplina extends JFrame {
 						gravarDisciplinaWS(d);
 						txtCurso.setText("");
 						txtDisciplina.setText("");
+						JOptionPane.showMessageDialog(null, "Sucesso ao gravar disciplina", "Sucesso", JOptionPane.INFORMATION_MESSAGE);
+						
 					} catch (Exception e1) {
 						JOptionPane.showMessageDialog(null, e1.getMessage(), "Erro ao gravar", JOptionPane.ERROR_MESSAGE);						
 						e1.printStackTrace();
